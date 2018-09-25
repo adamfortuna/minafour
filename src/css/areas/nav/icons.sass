@@ -5,15 +5,26 @@ body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children >
   @extend .fa-angle-down:before
   line-height: $menu-height
 
-#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.menu--icon a
-  transtion: color 0.3s
+#mega-menu-wrap-primary #mega-menu-primary 
+  // Specific styles for menu items with an icon
+  li.mega-menu-item.menu--icon
+    a
+      transtion: color 0.3s
+      &.mega-menu-link:before
+        @extend .far
 
-#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.menu--icon a.mega-menu-link:before
-  @extend .far
-  @extend .fa-lg
+        // Don't show icons unless on a large screen
+        @media only screen and (max-width: 1040px)
+          display: none
 
-  @media only screen and (max-width: 1040px)
-    display: none
+    // Increase size of top level icons
+    > a.mega-menu-link:before
+      @extend .fa-lg
+    
+    // Align submenu icons with text
+    > ul > li > a.mega-menu-link:before
+      line-height: 0.75em
+      vertical-align: -.0667em
 
 
 // Money icon next to "Start Investing"
@@ -54,3 +65,20 @@ body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children >
 
 .mega-menu-item .search-icon:before
   @extend .fa-lg
+
+// Submenu items
+.mega-sub-menu
+
+  .menu--icon
+    a:before
+      @extend .far
+      line-height: 0.75em
+      vertical-align: -.0667em
+      @media only screen and (max-width: 1040px)
+        display: none
+  
+    &.menu--networth a:before
+      @extend .fa-chart-line
+
+    &.menu--contact a:before
+      @extend .fa-envelope

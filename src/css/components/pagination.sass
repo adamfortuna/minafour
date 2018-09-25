@@ -1,0 +1,22 @@
+.pagination
+  ul
+    @extend .pagination-list
+    margin: 1rem 0
+    list-style: none
+    li
+      a
+        @extend .pagination-link
+      &.active
+        a
+          @extend .is-current
+      &.pagination-next,
+      &.pagination-previous
+        border: none
+        padding: 0
+        margin: 0.25em 0 0 0
+      &.pagination-next a
+          @extend .pagination-next
+      &.pagination-previous
+        order: 0 !important
+        a
+          @extend .pagination-previous
