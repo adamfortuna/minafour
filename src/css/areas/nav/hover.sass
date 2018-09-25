@@ -1,0 +1,19 @@
+// Animate an underline below menu items
+li.mega-menu-item:not(:last-child):before
+  content: ""
+  width: 0% !important
+  transition: width 300ms !important
+  height: 2px !important
+  bottom: -50px !important
+  left: 0 !important
+  position: relative !important
+  background: $primary !important
+  display: block !important
+  margin: 0 !important
+
+.mega-menu-item:not(:last-child):hover:before
+	width: 100% !important
+
+@media only screen and (max-width: $tablet)
+	#menu-main-menu:hover:before
+    width: 0

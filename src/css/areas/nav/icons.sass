@@ -1,0 +1,36 @@
+// Down icon to the right of menu items with a dropdown
+body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children > a.mega-menu-link:after, 
+body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children > a.mega-menu-link span.mega-indicator:after
+  @extend .far
+  @extend .fa-angle-down:before
+  line-height: $menu-height
+
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.menu--icon a
+  transtion: color 0.3s
+
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.menu--icon a.mega-menu-link:before
+  @extend .far
+  @extend .fa-lg
+
+// Money icon next to "Start Investing"
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.menu--start-investing a.mega-menu-link:before
+  @extend .fa-piggy-bank
+
+// Money icon next to "Learn"
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.menu--learn a.mega-menu-link:before
+  @extend .fa-book
+.menu--learn:hover a, .current-menu-item.menu--learn a,
+  color: $blue !important
+li.mega-menu-item.menu--learn:not(:last-child):before
+  background: $blue !important
+
+// Fire icon next to the Fire Guide Menu item
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.menu--guide a.mega-menu-link:before
+  @extend .fa-fire
+.menu--guide:hover a, .current-menu-item.menu--guide a,
+  color: $orange !important
+li.mega-menu-item.menu--guide:not(:last-child):before
+  background: $orange !important
+
+.mega-menu-item .search-icon:before
+  @extend .fa-lg

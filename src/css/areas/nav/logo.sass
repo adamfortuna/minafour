@@ -1,0 +1,46 @@
+//   Logo
+.mega-menu > .menu--brand > .mega-menu-link
+  display: none !important
+.navbar-brand
+  [itemprop="logo"]
+    background: url(/wp-content/themes/minafi/assets/images/mfi-white-bg.png)
+    background-size: 42px
+    width: 42px
+    height: 42px
+    display: block
+    float: left
+    margin-right: 0.2rem
+  img
+    display: none !important
+  .navbar-brand--text
+    color: #333
+    font-size: 2rem
+    font-weight: 700
+    letter-spacing: 4px
+    opacity: 0
+    right: -10px
+    position: relative
+    transition: opacity 0.5s, right 0.5s, letter-spacing 0.2s
+  &:hover
+    .navbar-brand--text
+      opacity: 1
+      right: 0
+      letter-spacing: 3px
+
+// Always show "inafi" on mobile
+@media only screen and (max-width: 767px)
+  .mega-menu-logo
+    top: 6px
+    position: relative
+  .navbar-brand--text
+    opacity: 1 !important
+    right: 0 !important
+    letter-spacing: 3px !important
+  .brand--text-small
+    line-height: 72px
+    padding-left: 3px
+    color: #333
+    font-size: 2rem
+    font-weight: 700
+    letter-spacing: 3px !important
+    position: relative
