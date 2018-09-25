@@ -128,7 +128,7 @@
   right: 0;
   top: 0; }
 
-.button, .input,
+.button, .input, .mega-search.mega-search-open input[type=text],
 .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
@@ -151,29 +151,29 @@
   padding-top: calc(0.375em - 1px);
   position: relative;
   vertical-align: top; }
-  .button:focus, .input:focus,
+  .button:focus, .input:focus, .mega-search.mega-search-open input:focus[type=text],
   .textarea:focus, .select select:focus, .file-cta:focus,
   .file-name:focus, .pagination-previous:focus,
   .pagination-next:focus,
   .pagination-link:focus,
-  .pagination-ellipsis:focus, .is-focused.button, .is-focused.input,
+  .pagination-ellipsis:focus, .is-focused.button, .is-focused.input, .mega-search.mega-search-open input.is-focused[type=text],
   .is-focused.textarea, .select select.is-focused, .is-focused.file-cta,
   .is-focused.file-name, .is-focused.pagination-previous,
   .is-focused.pagination-next,
   .is-focused.pagination-link,
-  .is-focused.pagination-ellipsis, .button:active, .input:active,
+  .is-focused.pagination-ellipsis, .button:active, .input:active, .mega-search.mega-search-open input:active[type=text],
   .textarea:active, .select select:active, .file-cta:active,
   .file-name:active, .pagination-previous:active,
   .pagination-next:active,
   .pagination-link:active,
-  .pagination-ellipsis:active, .is-active.button, .is-active.input,
+  .pagination-ellipsis:active, .is-active.button, .is-active.input, .mega-search.mega-search-open input.is-active[type=text],
   .is-active.textarea, .select select.is-active, .is-active.file-cta,
   .is-active.file-name, .is-active.pagination-previous,
   .is-active.pagination-next,
   .is-active.pagination-link,
   .is-active.pagination-ellipsis {
     outline: none; }
-  .button[disabled], .input[disabled],
+  .button[disabled], .input[disabled], .mega-search.mega-search-open input[disabled][type=text],
   .textarea[disabled], .select select[disabled], .file-cta[disabled],
   .file-name[disabled], .pagination-previous[disabled],
   .pagination-next[disabled],
@@ -1878,7 +1878,7 @@ a.box:active {
 .content.is-large {
   font-size: 1.5rem; }
 
-.input,
+.input, .mega-search.mega-search-open input[type=text],
 .textarea {
   background-color: white;
   border-color: #dbdbdb;
@@ -1886,165 +1886,165 @@ a.box:active {
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   max-width: 100%;
   width: 100%; }
-  .input::-moz-placeholder,
+  .input::-moz-placeholder, .mega-search.mega-search-open input[type=text]::-moz-placeholder,
   .textarea::-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input::-webkit-input-placeholder,
+  .input::-webkit-input-placeholder, .mega-search.mega-search-open input[type=text]::-webkit-input-placeholder,
   .textarea::-webkit-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input:-moz-placeholder,
+  .input:-moz-placeholder, .mega-search.mega-search-open input:-moz-placeholder[type=text],
   .textarea:-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input:-ms-input-placeholder,
+  .input:-ms-input-placeholder, .mega-search.mega-search-open input:-ms-input-placeholder[type=text],
   .textarea:-ms-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input:hover, .input.is-hovered,
+  .input:hover, .mega-search.mega-search-open input:hover[type=text], .input.is-hovered, .mega-search.mega-search-open input.is-hovered[type=text],
   .textarea:hover,
   .textarea.is-hovered {
     border-color: #b5b5b5; }
-  .input:focus, .input.is-focused, .input:active, .input.is-active,
+  .input:focus, .mega-search.mega-search-open input:focus[type=text], .input.is-focused, .mega-search.mega-search-open input.is-focused[type=text], .input:active, .mega-search.mega-search-open input:active[type=text], .input.is-active, .mega-search.mega-search-open input.is-active[type=text],
   .textarea:focus,
   .textarea.is-focused,
   .textarea:active,
   .textarea.is-active {
     border-color: #4cb058;
     box-shadow: 0 0 0 0.125em rgba(76, 176, 88, 0.25); }
-  .input[disabled],
+  .input[disabled], .mega-search.mega-search-open input[disabled][type=text],
   .textarea[disabled] {
     background-color: whitesmoke;
     border-color: whitesmoke;
     box-shadow: none;
     color: #7a7a7a; }
-    .input[disabled]::-moz-placeholder,
+    .input[disabled]::-moz-placeholder, .mega-search.mega-search-open input[type=text][disabled]::-moz-placeholder,
     .textarea[disabled]::-moz-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-    .input[disabled]::-webkit-input-placeholder,
+    .input[disabled]::-webkit-input-placeholder, .mega-search.mega-search-open input[type=text][disabled]::-webkit-input-placeholder,
     .textarea[disabled]::-webkit-input-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-    .input[disabled]:-moz-placeholder,
+    .input[disabled]:-moz-placeholder, .mega-search.mega-search-open input[disabled]:-moz-placeholder[type=text],
     .textarea[disabled]:-moz-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-    .input[disabled]:-ms-input-placeholder,
+    .input[disabled]:-ms-input-placeholder, .mega-search.mega-search-open input[disabled]:-ms-input-placeholder[type=text],
     .textarea[disabled]:-ms-input-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-  .input[readonly],
+  .input[readonly], .mega-search.mega-search-open input[readonly][type=text],
   .textarea[readonly] {
     box-shadow: none; }
-  .input.is-white,
+  .input.is-white, .mega-search.mega-search-open input.is-white[type=text],
   .textarea.is-white {
     border-color: white; }
-    .input.is-white:focus, .input.is-white.is-focused, .input.is-white:active, .input.is-white.is-active,
+    .input.is-white:focus, .mega-search.mega-search-open input.is-white:focus[type=text], .input.is-white.is-focused, .mega-search.mega-search-open input.is-white.is-focused[type=text], .input.is-white:active, .mega-search.mega-search-open input.is-white:active[type=text], .input.is-white.is-active, .mega-search.mega-search-open input.is-white.is-active[type=text],
     .textarea.is-white:focus,
     .textarea.is-white.is-focused,
     .textarea.is-white:active,
     .textarea.is-white.is-active {
       box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
-  .input.is-black,
+  .input.is-black, .mega-search.mega-search-open input.is-black[type=text],
   .textarea.is-black {
     border-color: #0a0a0a; }
-    .input.is-black:focus, .input.is-black.is-focused, .input.is-black:active, .input.is-black.is-active,
+    .input.is-black:focus, .mega-search.mega-search-open input.is-black:focus[type=text], .input.is-black.is-focused, .mega-search.mega-search-open input.is-black.is-focused[type=text], .input.is-black:active, .mega-search.mega-search-open input.is-black:active[type=text], .input.is-black.is-active, .mega-search.mega-search-open input.is-black.is-active[type=text],
     .textarea.is-black:focus,
     .textarea.is-black.is-focused,
     .textarea.is-black:active,
     .textarea.is-black.is-active {
       box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25); }
-  .input.is-light,
+  .input.is-light, .mega-search.mega-search-open input.is-light[type=text],
   .textarea.is-light {
     border-color: whitesmoke; }
-    .input.is-light:focus, .input.is-light.is-focused, .input.is-light:active, .input.is-light.is-active,
+    .input.is-light:focus, .mega-search.mega-search-open input.is-light:focus[type=text], .input.is-light.is-focused, .mega-search.mega-search-open input.is-light.is-focused[type=text], .input.is-light:active, .mega-search.mega-search-open input.is-light:active[type=text], .input.is-light.is-active, .mega-search.mega-search-open input.is-light.is-active[type=text],
     .textarea.is-light:focus,
     .textarea.is-light.is-focused,
     .textarea.is-light:active,
     .textarea.is-light.is-active {
       box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25); }
-  .input.is-dark,
+  .input.is-dark, .mega-search.mega-search-open input.is-dark[type=text],
   .textarea.is-dark {
     border-color: #363636; }
-    .input.is-dark:focus, .input.is-dark.is-focused, .input.is-dark:active, .input.is-dark.is-active,
+    .input.is-dark:focus, .mega-search.mega-search-open input.is-dark:focus[type=text], .input.is-dark.is-focused, .mega-search.mega-search-open input.is-dark.is-focused[type=text], .input.is-dark:active, .mega-search.mega-search-open input.is-dark:active[type=text], .input.is-dark.is-active, .mega-search.mega-search-open input.is-dark.is-active[type=text],
     .textarea.is-dark:focus,
     .textarea.is-dark.is-focused,
     .textarea.is-dark:active,
     .textarea.is-dark.is-active {
       box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
-  .input.is-primary,
+  .input.is-primary, .mega-search.mega-search-open input.is-primary[type=text],
   .textarea.is-primary {
     border-color: #4cb058; }
-    .input.is-primary:focus, .input.is-primary.is-focused, .input.is-primary:active, .input.is-primary.is-active,
+    .input.is-primary:focus, .mega-search.mega-search-open input.is-primary:focus[type=text], .input.is-primary.is-focused, .mega-search.mega-search-open input.is-primary.is-focused[type=text], .input.is-primary:active, .mega-search.mega-search-open input.is-primary:active[type=text], .input.is-primary.is-active, .mega-search.mega-search-open input.is-primary.is-active[type=text],
     .textarea.is-primary:focus,
     .textarea.is-primary.is-focused,
     .textarea.is-primary:active,
     .textarea.is-primary.is-active {
       box-shadow: 0 0 0 0.125em rgba(76, 176, 88, 0.25); }
-  .input.is-link,
+  .input.is-link, .mega-search.mega-search-open input.is-link[type=text],
   .textarea.is-link {
     border-color: #4cb058; }
-    .input.is-link:focus, .input.is-link.is-focused, .input.is-link:active, .input.is-link.is-active,
+    .input.is-link:focus, .mega-search.mega-search-open input.is-link:focus[type=text], .input.is-link.is-focused, .mega-search.mega-search-open input.is-link.is-focused[type=text], .input.is-link:active, .mega-search.mega-search-open input.is-link:active[type=text], .input.is-link.is-active, .mega-search.mega-search-open input.is-link.is-active[type=text],
     .textarea.is-link:focus,
     .textarea.is-link.is-focused,
     .textarea.is-link:active,
     .textarea.is-link.is-active {
       box-shadow: 0 0 0 0.125em rgba(76, 176, 88, 0.25); }
-  .input.is-info,
+  .input.is-info, .mega-search.mega-search-open input.is-info[type=text],
   .textarea.is-info {
     border-color: #209cee; }
-    .input.is-info:focus, .input.is-info.is-focused, .input.is-info:active, .input.is-info.is-active,
+    .input.is-info:focus, .mega-search.mega-search-open input.is-info:focus[type=text], .input.is-info.is-focused, .mega-search.mega-search-open input.is-info.is-focused[type=text], .input.is-info:active, .mega-search.mega-search-open input.is-info:active[type=text], .input.is-info.is-active, .mega-search.mega-search-open input.is-info.is-active[type=text],
     .textarea.is-info:focus,
     .textarea.is-info.is-focused,
     .textarea.is-info:active,
     .textarea.is-info.is-active {
       box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25); }
-  .input.is-success,
+  .input.is-success, .mega-search.mega-search-open input.is-success[type=text],
   .textarea.is-success {
     border-color: #23d160; }
-    .input.is-success:focus, .input.is-success.is-focused, .input.is-success:active, .input.is-success.is-active,
+    .input.is-success:focus, .mega-search.mega-search-open input.is-success:focus[type=text], .input.is-success.is-focused, .mega-search.mega-search-open input.is-success.is-focused[type=text], .input.is-success:active, .mega-search.mega-search-open input.is-success:active[type=text], .input.is-success.is-active, .mega-search.mega-search-open input.is-success.is-active[type=text],
     .textarea.is-success:focus,
     .textarea.is-success.is-focused,
     .textarea.is-success:active,
     .textarea.is-success.is-active {
       box-shadow: 0 0 0 0.125em rgba(35, 209, 96, 0.25); }
-  .input.is-warning,
+  .input.is-warning, .mega-search.mega-search-open input.is-warning[type=text],
   .textarea.is-warning {
     border-color: #ffdd57; }
-    .input.is-warning:focus, .input.is-warning.is-focused, .input.is-warning:active, .input.is-warning.is-active,
+    .input.is-warning:focus, .mega-search.mega-search-open input.is-warning:focus[type=text], .input.is-warning.is-focused, .mega-search.mega-search-open input.is-warning.is-focused[type=text], .input.is-warning:active, .mega-search.mega-search-open input.is-warning:active[type=text], .input.is-warning.is-active, .mega-search.mega-search-open input.is-warning.is-active[type=text],
     .textarea.is-warning:focus,
     .textarea.is-warning.is-focused,
     .textarea.is-warning:active,
     .textarea.is-warning.is-active {
       box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25); }
-  .input.is-danger,
+  .input.is-danger, .mega-search.mega-search-open input.is-danger[type=text],
   .textarea.is-danger {
     border-color: #ff3860; }
-    .input.is-danger:focus, .input.is-danger.is-focused, .input.is-danger:active, .input.is-danger.is-active,
+    .input.is-danger:focus, .mega-search.mega-search-open input.is-danger:focus[type=text], .input.is-danger.is-focused, .mega-search.mega-search-open input.is-danger.is-focused[type=text], .input.is-danger:active, .mega-search.mega-search-open input.is-danger:active[type=text], .input.is-danger.is-active, .mega-search.mega-search-open input.is-danger.is-active[type=text],
     .textarea.is-danger:focus,
     .textarea.is-danger.is-focused,
     .textarea.is-danger:active,
     .textarea.is-danger.is-active {
       box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25); }
-  .input.is-small,
+  .input.is-small, .mega-search.mega-search-open input.is-small[type=text],
   .textarea.is-small {
     border-radius: 2px;
     font-size: 0.75rem; }
-  .input.is-medium,
+  .input.is-medium, .mega-search.mega-search-open input.is-medium[type=text],
   .textarea.is-medium {
     font-size: 1.25rem; }
-  .input.is-large,
+  .input.is-large, .mega-search.mega-search-open input.is-large[type=text],
   .textarea.is-large {
     font-size: 1.5rem; }
-  .input.is-fullwidth,
+  .input.is-fullwidth, .mega-search.mega-search-open input.is-fullwidth[type=text],
   .textarea.is-fullwidth {
     display: block;
     width: 100%; }
-  .input.is-inline,
+  .input.is-inline, .mega-search.mega-search-open input.is-inline[type=text],
   .textarea.is-inline {
     display: inline;
     width: auto; }
 
-.input.is-rounded {
+.input.is-rounded, .mega-search.mega-search-open input.is-rounded[type=text] {
   border-radius: 290486px;
   padding-left: 1em;
   padding-right: 1em; }
 
-.input.is-static {
+.input.is-static, .mega-search.mega-search-open input.is-static[type=text] {
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
@@ -2586,29 +2586,47 @@ a.box:active {
     margin-right: -1px; }
   .field.has-addons .control:not(:first-child):not(:last-child) .button,
   .field.has-addons .control:not(:first-child):not(:last-child) .input,
+  .field.has-addons .control:not(:first-child):not(:last-child) .mega-search.mega-search-open input[type=text],
+  .mega-search.mega-search-open .field.has-addons .control:not(:first-child):not(:last-child) input[type=text],
   .field.has-addons .control:not(:first-child):not(:last-child) .select select {
     border-radius: 0; }
   .field.has-addons .control:first-child .button,
   .field.has-addons .control:first-child .input,
+  .field.has-addons .control:first-child .mega-search.mega-search-open input[type=text],
+  .mega-search.mega-search-open .field.has-addons .control:first-child input[type=text],
   .field.has-addons .control:first-child .select select {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
   .field.has-addons .control:last-child .button,
   .field.has-addons .control:last-child .input,
+  .field.has-addons .control:last-child .mega-search.mega-search-open input[type=text],
+  .mega-search.mega-search-open .field.has-addons .control:last-child input[type=text],
   .field.has-addons .control:last-child .select select {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
   .field.has-addons .control .button:hover, .field.has-addons .control .button.is-hovered,
   .field.has-addons .control .input:hover,
+  .field.has-addons .control .mega-search.mega-search-open input:hover[type=text],
+  .mega-search.mega-search-open .field.has-addons .control input:hover[type=text],
   .field.has-addons .control .input.is-hovered,
+  .field.has-addons .control .mega-search.mega-search-open input.is-hovered[type=text],
+  .mega-search.mega-search-open .field.has-addons .control input.is-hovered[type=text],
   .field.has-addons .control .select select:hover,
   .field.has-addons .control .select select.is-hovered {
     z-index: 2; }
   .field.has-addons .control .button:focus, .field.has-addons .control .button.is-focused, .field.has-addons .control .button:active, .field.has-addons .control .button.is-active,
   .field.has-addons .control .input:focus,
+  .field.has-addons .control .mega-search.mega-search-open input:focus[type=text],
+  .mega-search.mega-search-open .field.has-addons .control input:focus[type=text],
   .field.has-addons .control .input.is-focused,
+  .field.has-addons .control .mega-search.mega-search-open input.is-focused[type=text],
+  .mega-search.mega-search-open .field.has-addons .control input.is-focused[type=text],
   .field.has-addons .control .input:active,
+  .field.has-addons .control .mega-search.mega-search-open input:active[type=text],
+  .mega-search.mega-search-open .field.has-addons .control input:active[type=text],
   .field.has-addons .control .input.is-active,
+  .field.has-addons .control .mega-search.mega-search-open input.is-active[type=text],
+  .mega-search.mega-search-open .field.has-addons .control input.is-active[type=text],
   .field.has-addons .control .select select:focus,
   .field.has-addons .control .select select.is-focused,
   .field.has-addons .control .select select:active,
@@ -2616,9 +2634,17 @@ a.box:active {
     z-index: 3; }
     .field.has-addons .control .button:focus:hover, .field.has-addons .control .button.is-focused:hover, .field.has-addons .control .button:active:hover, .field.has-addons .control .button.is-active:hover,
     .field.has-addons .control .input:focus:hover,
+    .field.has-addons .control .mega-search.mega-search-open input:focus:hover[type=text],
+    .mega-search.mega-search-open .field.has-addons .control input:focus:hover[type=text],
     .field.has-addons .control .input.is-focused:hover,
+    .field.has-addons .control .mega-search.mega-search-open input.is-focused:hover[type=text],
+    .mega-search.mega-search-open .field.has-addons .control input.is-focused:hover[type=text],
     .field.has-addons .control .input:active:hover,
+    .field.has-addons .control .mega-search.mega-search-open input:active:hover[type=text],
+    .mega-search.mega-search-open .field.has-addons .control input:active:hover[type=text],
     .field.has-addons .control .input.is-active:hover,
+    .field.has-addons .control .mega-search.mega-search-open input.is-active:hover[type=text],
+    .mega-search.mega-search-open .field.has-addons .control input.is-active:hover[type=text],
     .field.has-addons .control .select select:focus:hover,
     .field.has-addons .control .select select.is-focused:hover,
     .field.has-addons .control .select select:active:hover,
@@ -2718,36 +2744,36 @@ a.box:active {
     top: 0;
     width: 2.25em;
     z-index: 4; }
-  .control.has-icon .input:focus + .icon {
+  .control.has-icon .input:focus + .icon, .control.has-icon .mega-search.mega-search-open input:focus[type=text] + .icon, .mega-search.mega-search-open .control.has-icon input:focus[type=text] + .icon {
     color: #7a7a7a; }
-  .control.has-icon .input.is-small + .icon {
+  .control.has-icon .input.is-small + .icon, .control.has-icon .mega-search.mega-search-open input.is-small[type=text] + .icon, .mega-search.mega-search-open .control.has-icon input.is-small[type=text] + .icon {
     font-size: 0.75rem; }
-  .control.has-icon .input.is-medium + .icon {
+  .control.has-icon .input.is-medium + .icon, .control.has-icon .mega-search.mega-search-open input.is-medium[type=text] + .icon, .mega-search.mega-search-open .control.has-icon input.is-medium[type=text] + .icon {
     font-size: 1.25rem; }
-  .control.has-icon .input.is-large + .icon {
+  .control.has-icon .input.is-large + .icon, .control.has-icon .mega-search.mega-search-open input.is-large[type=text] + .icon, .mega-search.mega-search-open .control.has-icon input.is-large[type=text] + .icon {
     font-size: 1.5rem; }
   .control.has-icon:not(.has-icon-right) .icon {
     left: 0; }
-  .control.has-icon:not(.has-icon-right) .input {
+  .control.has-icon:not(.has-icon-right) .input, .control.has-icon:not(.has-icon-right) .mega-search.mega-search-open input[type=text], .mega-search.mega-search-open .control.has-icon:not(.has-icon-right) input[type=text] {
     padding-left: 2.25em; }
   .control.has-icon.has-icon-right .icon {
     right: 0; }
-  .control.has-icon.has-icon-right .input {
+  .control.has-icon.has-icon-right .input, .control.has-icon.has-icon-right .mega-search.mega-search-open input[type=text], .mega-search.mega-search-open .control.has-icon.has-icon-right input[type=text] {
     padding-right: 2.25em; }
-  .control.has-icons-left .input:focus ~ .icon,
-  .control.has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon,
+  .control.has-icons-left .input:focus ~ .icon, .control.has-icons-left .mega-search.mega-search-open input:focus[type=text] ~ .icon, .mega-search.mega-search-open .control.has-icons-left input:focus[type=text] ~ .icon,
+  .control.has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon, .control.has-icons-right .mega-search.mega-search-open input:focus[type=text] ~ .icon, .mega-search.mega-search-open .control.has-icons-right input:focus[type=text] ~ .icon,
   .control.has-icons-right .select:focus ~ .icon {
     color: #7a7a7a; }
-  .control.has-icons-left .input.is-small ~ .icon,
-  .control.has-icons-left .select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon,
+  .control.has-icons-left .input.is-small ~ .icon, .control.has-icons-left .mega-search.mega-search-open input.is-small[type=text] ~ .icon, .mega-search.mega-search-open .control.has-icons-left input.is-small[type=text] ~ .icon,
+  .control.has-icons-left .select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon, .control.has-icons-right .mega-search.mega-search-open input.is-small[type=text] ~ .icon, .mega-search.mega-search-open .control.has-icons-right input.is-small[type=text] ~ .icon,
   .control.has-icons-right .select.is-small ~ .icon {
     font-size: 0.75rem; }
-  .control.has-icons-left .input.is-medium ~ .icon,
-  .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon,
+  .control.has-icons-left .input.is-medium ~ .icon, .control.has-icons-left .mega-search.mega-search-open input.is-medium[type=text] ~ .icon, .mega-search.mega-search-open .control.has-icons-left input.is-medium[type=text] ~ .icon,
+  .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon, .control.has-icons-right .mega-search.mega-search-open input.is-medium[type=text] ~ .icon, .mega-search.mega-search-open .control.has-icons-right input.is-medium[type=text] ~ .icon,
   .control.has-icons-right .select.is-medium ~ .icon {
     font-size: 1.25rem; }
-  .control.has-icons-left .input.is-large ~ .icon,
-  .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon,
+  .control.has-icons-left .input.is-large ~ .icon, .control.has-icons-left .mega-search.mega-search-open input.is-large[type=text] ~ .icon, .mega-search.mega-search-open .control.has-icons-left input.is-large[type=text] ~ .icon,
+  .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .control.has-icons-right .mega-search.mega-search-open input.is-large[type=text] ~ .icon, .mega-search.mega-search-open .control.has-icons-right input.is-large[type=text] ~ .icon,
   .control.has-icons-right .select.is-large ~ .icon {
     font-size: 1.5rem; }
   .control.has-icons-left .icon, .control.has-icons-right .icon {
@@ -2758,12 +2784,12 @@ a.box:active {
     top: 0;
     width: 2.25em;
     z-index: 4; }
-  .control.has-icons-left .input,
+  .control.has-icons-left .input, .control.has-icons-left .mega-search.mega-search-open input[type=text], .mega-search.mega-search-open .control.has-icons-left input[type=text],
   .control.has-icons-left .select select {
     padding-left: 2.25em; }
   .control.has-icons-left .icon.is-left {
     left: 0; }
-  .control.has-icons-right .input,
+  .control.has-icons-right .input, .control.has-icons-right .mega-search.mega-search-open input[type=text], .mega-search.mega-search-open .control.has-icons-right input[type=text],
   .control.has-icons-right .select select {
     padding-right: 2.25em; }
   .control.has-icons-right .icon.is-right {
@@ -11182,7 +11208,8 @@ body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children >
   height: 42px;
   display: block;
   float: left;
-  margin-right: 0.2rem; }
+  margin-right: 0.2rem;
+  margin-top: 6px; }
 
 .navbar-brand img {
   display: none !important; }
@@ -11226,19 +11253,25 @@ body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children >
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.menu--icon a {
   transtion: color 0.3s; }
 
-.menu--learn:hover a, .current-menu-item.menu--learn a {
+.menu--start-investing a, .menu--start-investing:hover a, .current-menu-item.menu--start-investing a {
+  color: #4cb058 !important; }
+
+.menu--underline.menu--start-investing:before {
+  background: #4cb058 !important; }
+
+.menu--learn a, .menu--learn:hover a, .current-menu-item.menu--learn a {
   color: #3273dc !important; }
 
-li.mega-menu-item.menu--learn:not(:last-child):before {
+.menu--underline.menu--learn:before {
   background: #3273dc !important; }
 
-.menu--guide:hover a, .current-menu-item.menu--guide a {
+.menu--guide a, .menu--guide:hover a, .current-menu-item.menu--guide a {
   color: #ff6e00 !important; }
 
-li.mega-menu-item.menu--guide:not(:last-child):before {
+.menu--underline.menu--guide:before {
   background: #ff6e00 !important; }
 
-li.mega-menu-item:not(:last-child):before {
+.menu--underline:before {
   content: "";
   width: 0% !important;
   transition: width 300ms !important;
@@ -11250,12 +11283,21 @@ li.mega-menu-item:not(:last-child):before {
   display: block !important;
   margin: 0 !important; }
 
-.mega-menu-item:not(:last-child):hover:before {
+.menu--underline:hover:before {
   width: 100% !important; }
 
 @media only screen and (max-width: 769px) {
-  #menu-main-menu:hover:before {
+  .menu--underline:hover:before {
     width: 0; } }
+
+.mega-search.mega-search-open .search-icon {
+  z-index: 99; }
+
+.mega-search.mega-search-open input[type=text] {
+  border: 1px solid #dbdbdb !important;
+  padding: 1rem !important;
+  width: 400px !important;
+  margin-top: -4px !important; }
 
 article header {
   margin-bottom: 2rem; }
