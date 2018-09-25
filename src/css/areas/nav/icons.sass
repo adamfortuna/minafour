@@ -12,6 +12,8 @@ body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children >
   @extend .far
   @extend .fa-lg
 
+  @media only screen and (max-width: 1040px)
+    display: none
 
 
 // Money icon next to "Start Investing"
@@ -32,6 +34,14 @@ body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children >
 .menu--underline.menu--learn:before
   background: $blue !important
 
+  
+// Calculator icon next to "Calculators"
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.menu--calculators a.mega-menu-link:before
+  @extend .fa-calculator
+.menu--calculators a, .menu--calculators:hover a, .current-menu-item.menu--calculators a,
+  color: $purple !important
+.menu--underline.menu--calculators:before
+  background: $purple !important
 
 
 // Fire icon next to the Fire Guide Menu item
