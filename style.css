@@ -993,7 +993,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 .box, .widget {
   background-color: white;
   border-radius: 6px;
-  box-shadow: 0 2px 3px rgba(76, 176, 88, 0.3), 0 0 0 1px rgba(76, 176, 88, 0.3);
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #4a4a4a;
   display: block;
   padding: 1.25rem; }
@@ -11379,5 +11379,6 @@ body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children >
 
 .content-sidebar .content-sidebar-wrap {
   margin: 0 auto !important; }
-  .content-sidebar .content-sidebar-wrap .sidebar {
-    border-left: 1px solid #dbdbdb; }
+
+.widget.widget--hide-title > .widget-wrap > h3 {
+  display: none; }

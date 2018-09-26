@@ -1,0 +1,11 @@
+.widget
+  @extend .box
+  h3
+    @extend .title
+    @extend .is-4
+
+  &.widget--hide-title
+    > .widget-wrap > h3
+      display: none
+
+@import 'widgets/email'
