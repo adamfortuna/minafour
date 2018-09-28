@@ -28,11 +28,11 @@ function updated_after_some_time() {
 }
 add_filter( 'genesis_post_info', 'minafour_post_meta_filter' );
 function minafour_post_meta_filter($post_meta) {
-  return '<div>
-      <figure class="image is-48x48">
-        <img itemprop="image" src="'.get_avatar_url(get_the_author_meta("user_email")).'" class="is-rounded is-48x48" height="48" width="48" />
+  return '<div class="single--meta">
+      <figure class="image is-pulled-left">
+        <img itemprop="image" src="'.get_avatar_url(get_the_author_meta("user_email")).'" class="image is-48x48 is-rounded" height="48" width="48" />
       </figure>
-      <p>
+      <p class="has-text-center">
         Written by [post_author_posts_link] on [post_date].
         <time class="'.updated_after_some_time().'" datetime="'.get_the_modified_date( DATE_W3C ).'" itemprop="dateModified">Updated '.get_the_modified_date( get_option('date_format') ).'.</time>
         <br/>

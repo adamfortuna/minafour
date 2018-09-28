@@ -1,0 +1,43 @@
+.entry-comments
+  margin-top: 2rem
+.comment-list
+  .comment
+    @extend .box
+    position: relative
+    padding: 1rem 2rem 
+    .comment-header
+      .comment-author
+        margin-bottom: 0
+        .avatar
+          position: absolute
+          top: 14px
+          left: -24px
+          box-shadow: 0 10px 28px 0 rgba(0,0,0,0.12)
+          border-radius: 10px
+        [itemprop="name"]
+          font-weight: 700
+        .says
+          display: none
+      .comment-meta
+        .comment-time-link
+          color: rgba(0,0,0,0.7)
+          font-weight: 400
+          font-size: 0.8rem
+    .comment-edit-link
+      display: none
+    .comment-reply
+      text-align: right
+      .comment-reply-link
+        @extend .button
+        @extend .is-outlined
+.comment-respond
+  @extend .box
+  margin-top: 2rem
+  .comment-form-comment
+    label
+      @extend .label
+    textarea
+      @extend .textarea
+  .submit
+    @extend .button
+    @extend .is-primary

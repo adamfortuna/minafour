@@ -46,7 +46,7 @@ function minafour_setup() {
 
   // Add theme support for footer widgets.
   // Todo: See how many footer widget areas I need
-  //add_theme_support( 'genesis-footer-widgets', 3 );
+  add_theme_support('genesis-footer-widgets', 1);
 
 
 	// Unregister layouts that use secondary sidebar.
