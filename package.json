@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "no license",
   "devDependencies": {
     "@fortawesome/fontawesome-pro": "^5.3.1",
     "bulma": "^0.7.1",
