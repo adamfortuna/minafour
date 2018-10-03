@@ -63,7 +63,8 @@ function minafour_setup() {
   include_once( get_stylesheet_directory() . '/includes/pages/single.php' );
   include_once( get_stylesheet_directory() . '/includes/pages/footer.php' );
 
+  // Layout Areas
+  include_once( get_stylesheet_directory() . '/includes/pages/layout.php' );
 
   include_once( get_stylesheet_directory() . '/includes/shortcodes/reading_time.php' );
 }
-

@@ -1,9 +1,23 @@
 // Down icon to the right of menu items with a dropdown
-body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children > a.mega-menu-link:after, 
-body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children > a.mega-menu-link span.mega-indicator:after
+body #mega-menu-wrap-primary > #mega-menu-primary > li.mega-menu-item-has-children > a.mega-menu-link:after, 
+body #mega-menu-wrap-primary > #mega-menu-primary > li.mega-menu-item-has-children > a.mega-menu-link span.mega-indicator:after
   @extend .far
   @extend .fa-angle-down:before
   line-height: $menu-height
+
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-tabbed > ul.mega-sub-menu > li.mega-menu-item.mega-menu-item-has-children 
+  > a.mega-menu-link
+    &:after
+      position: absolute
+      bottom: 10px
+      right: 20px
+      transition: right 0.3s
+    &:hover:after
+      right: 14px
+  &.mega-toggle-on
+    > a.mega-menu-link:after
+      right: 14px
 
 #mega-menu-wrap-primary #mega-menu-primary 
   // Specific styles for menu items with an icon
@@ -63,8 +77,13 @@ body #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children >
 .menu--underline.menu--guide:before
   background: $orange !important
 
-.mega-menu-item .search-icon:before
-  @extend .fa-lg
+.mega-menu-item .search-icon
+  &:before
+    @extend .fa-lg
+    font-size: 1rem
+  &:hover
+    &:before
+      color: red !important
 
 // Submenu items
 .mega-sub-menu

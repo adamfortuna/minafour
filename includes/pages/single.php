@@ -1,23 +1,5 @@
 <?php
 
-
-// Add featured image on single post
-add_action( 'genesis_before_entry_content', 'minafour_featured_image', 1 );
-function minafour_featured_image() {
-	$image = genesis_get_image( array( // more options here -> genesis/lib/functions/image.php
-			'format'  => 'html',
-			'size'    => 'large',
-			'context' => '',
-			'attr'    => array ( 'class' => 'aligncenter' ), // set a default WP image class
-			
-    ) );
-	if (is_singular()) {
-		if ( $image ) {
-			printf( '<div class="article--featured-image has-text-centered">%s</div>', $image );
-		}
-	}
-}
-
 function updated_after_some_time() {
   $u_time = get_the_time('U');
   $u_modified_time = get_the_modified_time('U');
@@ -38,31 +20,27 @@ function minafour_post_meta_filter($post_meta) {
         <br/>
         [reading_time label="" postfix="min read." postfix_singular="min read."]
         [post_categories before="" after="."]
-        <br>
         [post_comments]
       </p>
     </div>';
-  
-/*
-
-  <p class="article--header-meta-date mb-0">
-          
-          <span>
-            Written by
-            <span class="article--author-name" itemprop="name" rel="author"><a href="/about"><?php echo get_the_author_meta('display_name') ?></a></span>
-            <time datetime="<?php echo get_the_date( DATE_W3C ) ?>" itemprop="datePublished">
-               on <?php the_time( get_option('date_format') ); ?></time>.
-            <time class="<?php updated_after_some_time(); ?>" datetime="<?php echo the_modified_date( DATE_W3C ) ?>" itemprop="dateModified">Updated <?php the_modified_date( get_option('date_format') ); ?>.</time>
-            <br/>
-            <?php echo do_shortcode('[rt_reading_time label="" postfix="min read." postfix_singular="min read."]') ?>
-            <span class="article--header-categories">
-              <?php echo get_the_category_list(', '); ?>.
-            </span>
-          </span>
-        </p>
-
-  return $post_meta;
-  */
-
-
 }
+
+genesis_register_sidebar( array(
+	'id'		=> 'minafibeforefooter',
+	'name'		=> __( 'Post Footer', 'minafour' ),
+	'description'	=> __( 'This is the before footer section', 'minafour' ),
+) );
+
+add_action( 'genesis_before_comments', 'minafour_add_post_widget', 15 );
+function minafour_add_post_widget() {
+	genesis_widget_area( 'minafibeforefooter', array(
+		'before' => '<div class="beforefooter">',
+		'after'  => '</div>',
+	) );
+}
+
+remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_open', 5 );
+remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 );
+
+//* Remove the entry meta in the entry footer (requires HTML5 theme support)
+remove_action( 'genesis_entry_footer', 'genesis_post_meta' ); 

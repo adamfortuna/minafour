@@ -7,13 +7,13 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 // Disable Dashicons
-add_action( 'wp_print_styles',     'my_deregister_styles', 100 );
+// add_action( 'wp_print_styles',     'my_deregister_styles', 100 );
 function my_deregister_styles()    {
   wp_deregister_style( 'dashicons' );
 }
 
 // Disable the superfish script
-add_action( 'wp_enqueue_scripts', 'sp_disable_superfish' );
+// add_action( 'wp_enqueue_scripts', 'sp_disable_superfish' );
 function sp_disable_superfish() {
 	wp_deregister_script( 'superfish' );
 	wp_deregister_script( 'superfish-args' );
